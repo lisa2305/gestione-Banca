@@ -33,7 +33,7 @@ export class BancaComponent {
   }
 
   ngOnInit() {
-    this.pers = this.bancaservizio.getProdotti();
+    this.pers = this.bancaservizio.getPersone();
     this.personeFiltrate = this.pers;
   }
 
