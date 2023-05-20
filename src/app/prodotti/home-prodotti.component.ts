@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IListaPersonaBanca } from '../lista-banca';
-//import { BancaService } from './persone.service';
+import { BancaService } from './persone.service';
 
 @Component({
   selector: 'app-banca',
@@ -14,7 +14,7 @@ export class BancaComponent {
   personeFiltrate: IListaPersonaBanca[] = [];
   fromStelle: string = '';
 
-  //constructor(private bancaservizio: BancaService) {}
+  constructor(private bancaservizio: BancaService) {}
 
   get listFilter(): string {
     return this._listFilter;
@@ -32,10 +32,10 @@ export class BancaComponent {
     );
   }
 
-  /**ngOnInit() {
+  ngOnInit() {
     this.pers = this.bancaservizio.getPersone();
     this.personeFiltrate = this.pers;
-  }**/
+  }
 
   mostraImmagine() {
     this.imm = !this.imm;

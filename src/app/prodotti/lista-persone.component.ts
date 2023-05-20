@@ -1,3 +1,5 @@
 import { IListaPersonaBanca } from '../lista-banca';
 
-export const BANCA: IListaPersonaBanca[] = [];
+export const BANCA: IListaPersonaBanca[] = [ 
+
+];

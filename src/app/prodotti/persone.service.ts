@@ -62,6 +62,6 @@ export class BancaService {
         imageUrl:
           'https://www.topolino.it/wp-content/uploads/2019/12/quiquoequaintera.png',
       },
-    ];
+    ]
   }
 }
